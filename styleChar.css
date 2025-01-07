@@ -1,12 +1,70 @@
 h1 {
     text-align: center;
+    font-family:fantasy;
+    color:crimson;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
 }
 
 table, td, tr{
     border: 1px solid;
-    border-collapse: collapse;
+    text-align: center;
+    font-family:fantasy;
+    background-color:crimson;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+body{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feskipaper.com%2Fimages%2Fdark-background-1.jpg&f=1&nofb=1&ipt=1a08e059a2d667bbd0c2d9b2d4aa5d524fca8caa805bfe32e588217b4842340f&ipo=images);
 }
 
 #Myers{
-    
+    border: 10px inset;
+    border-color: yellow;
 }
+
+img:hover {
+    -webkit-transform: scale(1.1,1.1);
+  }
+
+button:hover{
+    -webkit-transform: scale(1.1,1.1);
+}
+button {
+    background-color: black;
+    border: solid;
+    color: red;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-family: fantasy;
+  }
+
+a{
+    color: crimson;
+    text-align:center;
+    background-color: yellow;
+    font-family: fantasy;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contatore{
+    background-color: black;
+    color: crimson;
+    border: 2px solid;
+    font-family: fantasy;
+    width: 50px;
+    text-align: right;
+}
+
+
