@@ -39,6 +39,12 @@ img:hover {
 button:hover{
     -webkit-transform: scale(1.1,1.1);
 }
+
+td:hover{
+    color: brown;
+    background-color: black;
+}
+
 button {
     background-color: black;
     border: solid;
