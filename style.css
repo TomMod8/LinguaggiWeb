@@ -1,0 +1,22 @@
+h2{             /*tutti gli h2 saranno modificati*/
+    color:red;
+    font-size:30px;
+    font-family: sans-serif;
+}
+
+.rosso {        /*i tag con class="rosso" saranno modificati*/
+    color:red;
+}
+
+a {     /*tutti i tag a saranno modificati*/
+    background-color: yellow;
+}
+
+#reference {    /*tutti i tag con id "reference" saranno modificati"*/
+    background-color: deeppink;
+}
+
+table,td,tr {
+    border:1px solid;
+    border-collapse:collapse;
+}
