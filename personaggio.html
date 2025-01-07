@@ -43,13 +43,16 @@
             <audio controls>
                 <source src="Halloween.mp3" type="audio/mpeg">
             </audio>
-            <button type="button" onclick="document.getElementById('contatore').innerHTML='1'">Bottone</button>
+            <button type="button" onclick="document.getElementById('contatore').innerHTML=addCounter()">Bottone per dire quante volte hai visto Halloween:</button>
             <div id="contatore">0</div>
             <br>
             <a class="center" href="https://www.imdb.com/list/ls004692335/" target="_blank">Clicca qui per la lista IMDB dei film della saga!</a>
 
             <script>
-                
+              function addCounter(){
+                var count = parseInt(document.getElementById('contatore').innerHTML) + 1;
+                return count;
+              }  
             </script>
                 
         </body>
