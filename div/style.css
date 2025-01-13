@@ -1,0 +1,25 @@
+div{
+    border:solid 8px white;
+    border-bottom: solid 30px white;
+    width: 50%; /*metà pagina*/
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px 30px 10px; /*lato sotto 30px*/
+    /*oppure*/ margin-top: 30px; /*conflitto, vince il più basso*/
+}
+
+img{
+    width: 100%; /*adatto img al div*/
+    height: 100%;
+    border:solid 1px black
+}
+
+body{
+    background-image:url("wood.jpg");
+}
+
+.didascalia{
+    font-family:"Lavishly yours", serif; /*rivedi import font*/
+    margin: 0; /*se no viene spinto sotto*/
+    text-align: center;
+}
