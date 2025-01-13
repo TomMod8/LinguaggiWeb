@@ -12,6 +12,7 @@ img{
     width: 100%; /*adatto img al div*/
     height: 100%;
     border:solid 1px black
+    
 }
 
 body{
@@ -19,7 +20,41 @@ body{
 }
 
 .didascalia{
-    font-family:"Lavishly yours", serif; /*rivedi import font*/
-    margin: 0; /*se no viene spinto sotto*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif; /*rivedi import font*/
+    /*margin: 0; /*se no viene spinto sotto*/
     text-align: center;
+    position: absolute;
+    top:140px;
+}
+
+div.a{
+    transform: rotate(-40deg);
+    position: relative;
+    left: 50px;
+}
+
+div.b{
+    transform: rotate(-10deg);
+    position: relative;
+    left: 100px;
+}
+
+div.c{
+    transform: rotate(30deg);
+    position: relative;
+    left: 20px;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    bottom: 10px;
+    color:brown;
+}
+
+h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: sticky;
+    top:0px;
+    color:brown;
 }
