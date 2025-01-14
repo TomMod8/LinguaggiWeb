@@ -9,9 +9,11 @@
         </head>
 
         <body>
-            <h1>Best photos in the <b>world.</b></h1>
-            <h2>Photo album 2024.</h2>
-            <h2>By Tom</h2>
+            <div class="title">
+                <h1>Photo album 2024.</h1>
+                <h2>By Tom</h2>
+                <h1 id="bottomText">Best photos in the <b>world.</b></h1>
+            </div>
 
             <div class="table">
                 <div class="polaroid">
@@ -33,10 +35,13 @@
                     <img src="https://thumbs.dreamstime.com/b/satellietbeeld-van-navona-vierkant-piazza-rome-itali%C3%AB-133107180.jpg">
                     <div class="didascalia">Roma</div>
                 </div>
+                <div>
+                    <input type="button" class="button" value="ALIGN" id="alignButton" onclick="alignPhotos()">  
+                </div>
             </div>
             
 
-            <input type="button" value="CLICK TO SCATTER" id="updPh" onclick="scatterPhotos()">
+            <input type="button" class="button" value="CLICK TO SCATTER" id="updPh" onclick="scatterPhotos()">
         
         </body>
     </html>
