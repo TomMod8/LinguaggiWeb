@@ -5,31 +5,38 @@
             <meta charset="utf-8">
             <meta name=”viewport” content=”width=device-width,initial-scale=1”>
             <link rel="stylesheet" href="style.css">
-            <script src="script.js"></script>
+            <script src="script.js" async></script>
         </head>
 
         <body>
             <h1>Best photos in the <b>world.</b></h1>
             <h2>Photo album 2024.</h2>
             <h2>By Tom</h2>
-            <div class="a">
-                <img src="https://images.fineartamerica.com/images-medium-large-5/1-tokyo-cory-dewald.jpg">
-                <p class="didascalia">Tokyo</p>
-            </div>
 
-            <div class="c">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/CaracasParqueCentral.jpg/1920px-CaracasParqueCentral.jpg">
-                <p class="didascalia">Caracas</p>
-            </div>
+            <div class="table">
+                <div class="polaroid">
+                    <img src="https://images.fineartamerica.com/images-medium-large-5/1-tokyo-cory-dewald.jpg">
+                    <div class="didascalia">Tokyo</div>
+                </div>
 
-            <div class="b">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/New_York_City_Times_Square_09.jpg">
-                <p class="didascalia">New York</p>
-            </div>
+                <div class="polaroid">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/CaracasParqueCentral.jpg/1920px-CaracasParqueCentral.jpg">
+                    <div class="didascalia">Caracas</div>
+                </div>
 
-            <div class="c">
-                <img src="https://thumbs.dreamstime.com/b/satellietbeeld-van-navona-vierkant-piazza-rome-itali%C3%AB-133107180.jpg">
-                <p class="didascalia">Roma</p>
+                <div class="polaroid">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/New_York_City_Times_Square_09.jpg">
+                    <div class="didascalia">New York</div>
+                </div>
+
+                <div class="polaroid">
+                    <img src="https://thumbs.dreamstime.com/b/satellietbeeld-van-navona-vierkant-piazza-rome-itali%C3%AB-133107180.jpg">
+                    <div class="didascalia">Roma</div>
+                </div>
             </div>
+            
+
+            <input type="button" value="CLICK TO SCATTER" id="updPh" onclick="scatterPhotos()">
+        
         </body>
     </html>

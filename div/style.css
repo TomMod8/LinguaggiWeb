@@ -1,11 +1,20 @@
-div{
+.table{
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin: 100px;
+    background-image:url("wood.jpg");
+    border: solid 1px black;
+    border-radius: 20px;
+}
+
+.polaroid{
     border:solid 8px white;
     border-bottom: solid 30px white;
-    width: 50%; /*metà pagina*/
-    width: 150px;
-    height: 150px;
-    margin: 10px 10px 30px 10px; /*lato sotto 30px*/
-    /*oppure*/ margin-top: 30px; /*conflitto, vince il più basso*/
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    transition: transform 2s ease;
 }
 
 img{
@@ -16,34 +25,16 @@ img{
 }
 
 body{
-    background-image:url("wood.jpg");
+    background-image:url("floor.jpg");
 }
 
 .didascalia{
-    font-family:Verdana, Geneva, Tahoma, sans-serif; /*rivedi import font*/
-    /*margin: 0; /*se no viene spinto sotto*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     position: absolute;
-    top:140px;
+    top:130px;
 }
 
-div.a{
-    transform: rotate(-40deg);
-    position: relative;
-    left: 50px;
-}
-
-div.b{
-    transform: rotate(-10deg);
-    position: relative;
-    left: 100px;
-}
-
-div.c{
-    transform: rotate(30deg);
-    position: relative;
-    left: 20px;
-}
 
 h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -58,3 +49,11 @@ h2{
     top:0px;
     color:brown;
 }
+
+#updPh
+{
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+}
+
