@@ -56,14 +56,6 @@ h2{
     color:brown;
 }
 
-#bottomText{
-    position: fixed;
-    bottom: 10px;
-    background-color: burlywood;
-    border: solid 4px brown;
-    margin-right: 900px;
-}
-
 .button{
     background-color: burlywood;
     color: brown;
@@ -75,18 +67,26 @@ h2{
 {
     position: fixed;
     left: 50%;
-    bottom: 10px;  
+    bottom: 10px;
+    font-size: larger;
 }
-
-#updPh:hover {
-    -webkit-transform: scale(1.1,1.1);
-  }
 
 #alignButton{
     position:absolute;
     top:10px;
     left: 10px;
 }
-#align:hover {
+
+#bottomText{
+    position: fixed;
+    bottom: 10px;
+    background-color: burlywood;
+    border: solid 4px brown;
+    margin-right: 900px;
+}
+
+#updPh:hover, #alignButton:hover {
     -webkit-transform: scale(1.1,1.1);
+    cursor: pointer;
   }
+
