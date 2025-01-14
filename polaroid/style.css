@@ -42,17 +42,10 @@ body{
 }
 
 
-h1{
+h1, h2{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     position: sticky;
     bottom: 10px;
-    color:brown;
-}
-
-h2{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    position: sticky;
-    top:0px;
     color:brown;
 }
 
@@ -63,13 +56,7 @@ h2{
     border-radius: 10px;
 }
 
-#updPh
-{
-    position: fixed;
-    left: 50%;
-    bottom: 10px;
-    font-size: larger;
-}
+
 
 #alignButton{
     position:absolute;
@@ -85,8 +72,23 @@ h2{
     margin-right: 900px;
 }
 
-#updPh:hover, #alignButton:hover {
+#updPh:hover, #alignButton:hover, #uplPh:hover {
     -webkit-transform: scale(1.1,1.1);
     cursor: pointer;
   }
+
+  #uplPh{
+    position: fixed;
+    left: 30%;
+    bottom: 10px;
+    font-size: larger;
+  }
+
+  #updPh
+{
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    font-size: larger;
+}
 
