@@ -18,13 +18,14 @@ function scatterPhotos()
 function alignPhotos()
 {
     var myArray = document.getElementsByClassName("polaroid");
-
-    for (var i=0; i < myArray.length; i++)
+    
+    for (var i=0, k=75; i < myArray.length; i++, k+= 200)
     {
         myArray[i].style.transform = "initial";
+        myArray[i].style.left = k + "px";
+        myArray[i].style.top = "125px";
 
-        myArray[i].style.right = "300px"; //rivedi
-        myArray[i].style.top = "150px";
+        myArray[i].style.transform = "1s ease";
     } 
 }
 
