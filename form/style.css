@@ -1,19 +1,33 @@
 body{
     background-image: url(texture.png);
     font-family: "Kimberley";
+    font-size: 25px;
 }
 
 h1{
     text-align: center;
+    border: solid 5px tomato;
 }
 
-#firstN, #lastN, #submitBtn{
+.nameForm{
+    position: absolute;  
+}
+
+#rightForm{
+    margin-left: 50%;
+}
+
+#firstN, #lastN, #firstNJS, #lastNJS, .submitBtn{
     border-radius: 5px;
     font-family: "Kimberley";
     text-align: center;
 }
 
-#firstN:hover, #lastN:hover, #submitBtn:hover{
+.submitBtn{
+    background-color: tomato;
+}
+
+#firstN:hover, #lastN:hover, #firstNJS:hover, #lastNJS:hover #submitBtn:hover{
     -webkit-transform:scale(1.1, 1.1)
 }
 
@@ -21,12 +35,13 @@ h1{
     cursor: pointer;
 }
 
-#nameForm{
-    margin-left: 0%;   
-}
-
 #info{
     font-style: italic;
+}
+
+#container{
+    position: relative;
+    height: 350px;
 }
 
 @font-face {
