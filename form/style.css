@@ -1,0 +1,35 @@
+body{
+    background-image: url(texture.png);
+    font-family: "Kimberley";
+}
+
+h1{
+    text-align: center;
+}
+
+#firstN, #lastN, #submitBtn{
+    border-radius: 5px;
+    font-family: "Kimberley";
+    text-align: center;
+}
+
+#firstN:hover, #lastN:hover, #submitBtn:hover{
+    -webkit-transform:scale(1.1, 1.1)
+}
+
+#submitBtn:hover{
+    cursor: pointer;
+}
+
+#nameForm{
+    margin-left: 0%;   
+}
+
+#info{
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kimberley";
+    src: url("Kimberley Bl.otf") format("truetype");
+  }
