@@ -6,7 +6,7 @@
             <meta name=”viewport” content=”width=device-width,initial-scale=1”>
 			<link rel="icon" href="icon.png">
             <link rel="stylesheet" href="style.css">
-            <script src="https://raw.githubusercontent.com/eclipse/paho.mqtt.javascript/master/src/paho-mqtt.js"></script>
+            <script src="Paho.js"></script>
             <script src="PahoStart.js"></script>
 			<script src="script.js"></script>
 
@@ -14,7 +14,36 @@
 
         <body>
             <h1>Welcome to our MQTT chat!</h1>
-			
-			
+
+            <div class="infoForm">
+                <h2>Enter your chat data!</h2>
+                <form>
+                    <label for="broker">Broker:</label><br>
+                    <input type="text" id="broker" name="brokername" placeholder="Broker ID"><br><br>
+
+                    <label for="client">Client:</label><br>
+                    <input type="text" id="client" name="clientname" placeholder="Client ID"><br><br>
+
+                    <label for="topic">Topic:</label><br>
+                    <input type="text" id="topic" name="topicname" placeholder="Topic"><br><br>
+
+                    <input type="button" class="submitButton" value="Submit">
+                </form>
+            </div>
+
+            <div class="infoForm">
+                <h2>Enter your message!</h2>
+                <form>
+                    <label for="messageBox">Message:</label><br>
+                    <input type="text" id="messageBox" name="messagestring" placeholder="Your message"><br><br>
+
+                    <input type="button" class="submitButton" value="Send Message"><br><br>
+                </form>
+            </div>
+
+            <div>
+                <textarea placeholder="Is anyone there?" rows="4" cols="50" readonly="readonly"></textarea>
+            </div>
+
         </body>
     </html>
