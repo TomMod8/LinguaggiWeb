@@ -1,0 +1,12 @@
+body{
+    background-image: url(texture.jpg);
+    font-family: "Cilok";
+    font-size: 30px;
+    color: tomato;
+    -webkit-text-stroke: 3px black;
+}
+
+@font-face {
+    font-family: "Cilok";
+    src: url("Cilok There.otf") format("truetype");
+  }

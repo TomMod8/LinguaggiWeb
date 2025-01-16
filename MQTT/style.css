@@ -1,0 +1,10 @@
+body{
+    background-image: url(texture.jpg);
+    font-family: "Montserrat";
+    font-size: 22px;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("Montserrat.ttf") format("truetype");
+  }

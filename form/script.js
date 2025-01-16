@@ -34,8 +34,8 @@ function saveLocal()
 
 function welcomeBack()
 {   
-    var firstName = localStorage.getItem("firstName");
-    var lastName = localStorage.getItem("lastName");
+    var firstName = localStorage.getItem("firstName") || "";
+    var lastName = localStorage.getItem("lastName") || "";
     // || check se è nullo, uguale a if ... != null
 
     if(firstName=="" && lastName=="")
