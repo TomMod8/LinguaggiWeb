@@ -10,29 +10,15 @@ h1{
 }
 
 .nameForm{
-    position: absolute;  
-}
-
-#rightForm{
-    margin-left: 50%;
-}
-
-#firstN, #lastN, #firstNJS, #lastNJS, .submitBtn{
-    border-radius: 5px;
-    font-family: "Kimberley";
-    text-align: center;
+    position: absolute;
 }
 
 .submitBtn{
     background-color: tomato;
 }
 
-#firstN:hover, #lastN:hover, #firstNJS:hover, #lastNJS:hover #submitBtn:hover{
-    -webkit-transform:scale(1.1, 1.1)
-}
-
-#submitBtn:hover{
-    cursor: pointer;
+#rightForm{
+    margin-left: 50%;
 }
 
 #info{
@@ -42,6 +28,22 @@ h1{
 #container{
     position: relative;
     height: 350px;
+}
+
+#firstN, #lastN, #firstNJS, #lastNJS, #firstNBottom, #lastNBottom, .submitBtn{
+    border-radius: 5px;
+    font-family: "Kimberley";
+    text-align: center;
+}
+
+
+
+#firstN:hover, #lastN:hover, #firstNJS:hover, #lastNJS:hover, .submitBtn:hover, #firstNBottom:hover, #lastNBottom:hover{
+    -webkit-transform:scale(1.1, 1.1)
+}
+
+#submitBtn:hover{
+    cursor: pointer;
 }
 
 @font-face {

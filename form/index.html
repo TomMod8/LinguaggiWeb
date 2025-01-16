@@ -5,25 +5,24 @@
             <meta charset="utf-8">
             <meta name=”viewport” content=”width=device-width,initial-scale=1”>
             <link rel="stylesheet" href="style.css">
-            <script src="script.js" async></script>
-            
             <link rel="icon" href="icon.png">
+            <script src="script.js" async></script>
         </head>
 
-        <body>
+        <body onload="welcomeBack()">
             <h1>HTML Forms</h1>
             <div id="container">
                 <div class="nameForm" id="leftForm">
                     <h2>Using "submit + action"</h2>
-                    <form method="post" action="https://webhook.site/514f908a-5272-4a40-96aa-8a8be86cb021">
-                        <label for="firstN">First name:</label><br>
-                        <input type="text" id="firstN" name="fname" placeholder="Enter your first name."><br>
+                        <form method="post" action="https://webhook.site/514f908a-5272-4a40-96aa-8a8be86cb021">
+                            <label for="firstN">First name:</label><br>
+                            <input type="text" id="firstN" name="fname" placeholder="Enter your first name."><br>
 
-                        <label for="lastN">Last name:</label><br>
-                        <input type="text" id="lastN" name="lname" placeholder="Enter your last name."><br><br>
+                            <label for="lastN">Last name:</label><br>
+                            <input type="text" id="lastN" name="lname" placeholder="Enter your last name."><br><br>
 
-                        <input type="submit" class="submitBtn" value="Submit Here">
-                    </form>
+                            <input type="submit" class="submitBtn" value="Submit Here">
+                        </form>
                 </div>
 
                 <div class="nameForm" id="rightForm">
@@ -39,6 +38,22 @@
                     </form>
                 </div>
             </div>
-            <div id="info">If you click the "Submit Here" button, the form-data will be sent via webhook.</div>       
+
+            <div id="info">If you click the "Submit Here" button, the form-data will be sent via webhook.</div>
+
+            <div class="nameForm" id="bottomForm">
+                <h2>Saving in local DB</h2>
+                <form>
+                    <label for="firstNBottom">First name:</label><br>
+                    <input type="text" id="firstNBottom" name="fname" placeholder="Enter your first name."><br>
+
+                    <label for="lastNBottom">Last name:</label><br>
+                    <input type="text" id="lastNBottom" name="lname" placeholder="Enter your last name."><br><br>
+
+                    <input type="button" class="submitBtn" value="Submit Here" onclick="saveLocal()">
+                </form>
+            </div>      
         </body>
     </html>
+
+
