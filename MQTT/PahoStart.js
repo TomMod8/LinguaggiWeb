@@ -1,14 +1,39 @@
-function start() //invia mex
-{
-   // Create a client instance
-   var client = new Paho.Client("test.mosquitto.org", Number(8080), "Tommaso");
 
-   // set callback handlers
-   client.onConnectionLost = onConnectionLost;
-   client.onMessageArrived = onMessageArrived;
- 
-   // connect the client
-   client.connect({onSuccess:onConnect});
+function getInputConnect()
+{
+  var brokerURL = document.getElementById("broker").value;
+  var clientID = document.getElementById("client").value;
+  var topicName = document.getElementById("topic").value;
+
+  alert("Data was registered!");
+  document.getElementById("broker").value = "";
+  document.getElementById("client").value = "";
+  document.getElementById("topic").value = "";
+
+  // Create a client instance
+  var client = new Paho.Client(brokerURL, Number(8080), clientID);
+
+  // set callback handlers
+  client.onConnectionLost = onConnectionLost;
+  client.onMessageArrived = onMessageArrived;
+
+  // connect the client
+  client.connect({onSuccess:onConnect});
+
+  client.subscribe(topicName);
+
+}
+
+function sendMessage()
+{
+  var messagestring = document.getElementById("messageBox").value;
+
+  alert("Message sent!");
+  document.getElementById("messageBox").value = "";
+
+  message = new Paho.Message(messagestring);   //rivedi accesso a  topic name + client. va rifatto
+  message.destinationName = topicName;
+  client.send(message);
 }
 
 
@@ -16,10 +41,6 @@ function start() //invia mex
 function onConnect() {
   // Once a connection has been made, make a subscription and send a message.
   console.log("onConnect");
-  client.subscribe("World");
-  message = new Paho.Message("MDLTMS");
-  message.destinationName = "World";
-  client.send(message);
 }
 
 // called when the client loses its connection
@@ -31,5 +52,6 @@ function onConnectionLost(responseObject) {
 
 // called when a message arrives
 function onMessageArrived(message) {
-  console.log("onMessageArrived:"+message.payloadString);
+    const messageArea = document.getElementById("area");
+    messageArea.value += message.payloadString + "\n";
 }
