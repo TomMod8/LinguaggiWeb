@@ -1,13 +1,15 @@
+function start() //invia mex
+{
+   // Create a client instance
+   var client = new Paho.Client("test.mosquitto.org", Number(8080), "Tommaso");
 
-  // Create a client instance
-  var client = new Paho.Client("test.mosquitto.org", Number(8080), "Tommaso");
-
-  // set callback handlers
-  client.onConnectionLost = onConnectionLost;
-  client.onMessageArrived = onMessageArrived;
-
-  // connect the client
-  client.connect({onSuccess:onConnect});
+   // set callback handlers
+   client.onConnectionLost = onConnectionLost;
+   client.onMessageArrived = onMessageArrived;
+ 
+   // connect the client
+   client.connect({onSuccess:onConnect});
+}
 
 
 // called when the client connects

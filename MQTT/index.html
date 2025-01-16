@@ -17,15 +17,24 @@
 
             <div class="infoForm">
                 <h2>Enter your chat data!</h2>
-                <form>
-                    <label for="broker">Broker:</label><br>
-                    <input type="text" id="broker" name="brokername" placeholder="Broker ID"><br><br>
+                <form>              
+                    <div class="tooltip">
+                        <label for="broker">Broker:</label><br>
+                        <input class="inputbox" type="text" id="broker" name="brokername" placeholder="Broker ID"><br><br>
+                        <span class="tooltiptext">Backend system which coordinates messages</span>
+                    </div>
+                
+                    <div class="tooltip">   
+                        <label for="client">Client:</label><br>
+                        <input class="inputbox" type="text" id="client" name="clientname" placeholder="Client ID"><br><br>
+                        <span class="tooltiptext">Any device that runs an MQTT library</span>
+                    </div>
 
-                    <label for="client">Client:</label><br>
-                    <input type="text" id="client" name="clientname" placeholder="Client ID"><br><br>
-
-                    <label for="topic">Topic:</label><br>
-                    <input type="text" id="topic" name="topicname" placeholder="Topic"><br><br>
+                    <div class="tooltip">   
+                        <label for="topic">Topic:</label><br>
+                        <input class="inputbox" type="text" id="topic" name="topicname" placeholder="Topic"><br><br>
+                        <span class="tooltiptext">Refers to keywords the MQTT broker uses to filter messages</span>
+                    </div>
 
                     <input type="button" class="submitButton" value="Submit">
                 </form>
