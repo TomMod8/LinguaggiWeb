@@ -38,6 +38,25 @@ textarea{
     font-family: "Montserrat";
 }
 
+.dot{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border: solid 2px black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#broker{
+    width: 250px;
+    float: left;
+}
+
+#port{
+    width: 120px;
+    float: inline-end;
+}
+
 .tooltiptext{
     visibility: hidden;
     background-color: black;

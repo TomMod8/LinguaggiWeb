@@ -6,10 +6,8 @@
             <meta name=”viewport” content=”width=device-width,initial-scale=1”>
 			<link rel="icon" href="icon.png">
             <link rel="stylesheet" href="style.css">
-            <script src="Paho.js"></script>
-            <script src="PahoStart.js"></script>
-			<script src="script.js"></script>
-
+            <script src="Paho.js" defer></script>
+            <script src="PahoStart.js" defer></script>
         </head>
 
         <body>
@@ -20,7 +18,8 @@
                 <form>              
                     <div class="tooltip">
                         <label for="broker">Broker URL:</label><br>
-                        <input class="inputbox" type="text" id="broker" name="brokername" placeholder="Broker URL"><br><br>
+                        <input class="inputbox" type="text" id="broker" name="brokername" placeholder="Broker URL">
+                        <input class="inputbox" type="text" id="port" name="brokerport" placeholder="Broker Port"><br><br>
                         <span class="tooltiptext">Backend system which coordinates messages</span>
                     </div>
                 
@@ -36,7 +35,8 @@
                         <span class="tooltiptext">Refers to keywords the MQTT broker uses to filter messages</span>
                     </div>
 
-                    <input type="button" class="submitButton" value="Submit" onclick="getInputConnect()">
+                    <input type="button" class="submitButton" value="Connect" id="connectButton" onclick="getInputConnect()">
+                    <span class="dot" id="status"></span>
                 </form>
             </div>
 
