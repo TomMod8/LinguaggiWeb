@@ -57,27 +57,27 @@ const cardsCollection = [];
 let cardsDictionary = [];
 
     cardsDictionary.push({
-        key:   "/cards/pepe.jpg",
+        key:   "cards/pepe.jpg",
         value: "pepe"
     });
     cardsDictionary.push({
-        key:   "/cards/alien.jpg",
+        key:   "cards/alien.jpg",
         value: "alin"
     });
     cardsDictionary.push({
-        key:   "/cards/nugget.jpg",
+        key:   "cards/nugget.jpg",
         value: "nugt"
     });
     cardsDictionary.push({
-        key:   "/cards/troll.jpg",
+        key:   "cards/troll.jpg",
         value: "trll"
     });
     cardsDictionary.push({
-        key:   "/cards/yap.jpg",
+        key:   "cards/yap.jpg",
         value: "yapd"
     });
     cardsDictionary.push({
-        key:   "/cards/bird.jpg",
+        key:   "cards/bird.jpg",
         value: "bird"
     });
 
